@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+@import url('https://fonts.googleapis.com/css?family=Rambla:400,700');
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+body{
+	background: #fdde7e;
+}
+
+
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+height: 600px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+
+}
+.ba-coupon{
+	width: 30%;
+	background: #FFFFFF;
+	height: 441px;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	padding: 10px;
+}
+.ba-coupon:hover{
+	height: 500px;
+}
+.ba-coupon__prize{
+	font-family: 'Rambla', sans-serif;
+	color:  #02995b;
+	font-size: 70px;
+	font-weight: 700;
+}
+.ba-coupon__prize:before{
+	content: '$';
+}
+.ba-coupon__title{
+	font-family: 'Rambla', sans-serif;
+	color:  #333333;
+	font-size: 56px;
+	font-weight: 400;
+}
+.ba-coupon__description{
+	font-family: Lato, sans-serif;
+	width: 50%;
+	color:  #333333;
+	font-size: 20px;
+	font-weight: 300;
+	text-align: center;
+	line-height: 26px;
+	padding-bottom: 10px;
+}
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
