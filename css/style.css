@@ -1,68 +1,82 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400');
-@import url('https://fonts.googleapis.com/css?family=Rambla:400,700');
+
+@font-face {
+	font-family: 'Miso';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Miso'), url('../font/miso.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Miso';
+	font-style: normal;
+	font-weight: bold;
+	src: local('Miso Bold'), url('../font/miso-bold.woff') format('woff');
+}
 *{
-	padding: 0;
-	margin: 0;
-	border: 0;
+	box-sizing: border-box;
+	height: 100%;
+
 }
 body{
 	background: #fdde7e;
+	text-align: center;
+	color: #333333;
+	font-family: 'Miso', sans-serif;
 }
-
-
 
 /* Layout */
 .ba-container{
 	padding-left: 20px;
 	padding-right: 20px;
 	max-width: 1200px;
-height: 600px;
 	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
 	flex-direction: row;
+	justify-content: center;
 	align-items: center;
-	justify-content: space-between;
-
+}
+.ba-container__items{
+	min-width: 300px;
+	width: 360px;
+	height: 500px;
+	padding: 30px 15px;
+}
+.ba-container__items:hover{
+	padding: 0 15px;
 }
 .ba-coupon{
-	width: 30%;
 	background: #FFFFFF;
-	height: 441px;
 	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: space-around;
+	align-items: center;
 	padding: 10px;
 }
-.ba-coupon:hover{
-	height: 500px;
-}
-.ba-coupon__prize{
-	font-family: 'Rambla', sans-serif;
+.ba-coupon__price{
 	color:  #02995b;
 	font-size: 70px;
-	font-weight: 700;
+	line-height: 24px;
+	font-weight: bold;
 }
-.ba-coupon__prize:before{
+.ba-coupon__price:before{
 	content: '$';
 }
 .ba-coupon__title{
-	font-family: 'Rambla', sans-serif;
-	color:  #333333;
 	font-size: 56px;
-	font-weight: 400;
+	line-height: 24px;
+	font-weight: normal;
 }
 .ba-coupon__description{
-	font-family: Lato, sans-serif;
-	width: 50%;
-	color:  #333333;
+	font-family: 'Lato', sans-serif;
 	font-size: 20px;
 	font-weight: 300;
-	text-align: center;
 	line-height: 26px;
-	padding-bottom: 10px;
+	width: 50%;
 }
-
 
 /* Typography */
 a,
@@ -79,13 +93,6 @@ button,
 .ba-button{
 	display: inline-block;
 }
-input[type="submit"]:hover,
-input[type="button"]:hover,
-button:hover,
-.ba-button:hover{
-
-}
-
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -93,21 +100,8 @@ input[type="number"],
 input[type="tel"],
 textarea,
 select {
-
 	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
 	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
 	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="number"]:focus,
-input[type="tel"]:focus,
-textarea:focus,
-select:focus {
-
-}
-textarea {
-
-}
