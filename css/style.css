@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+
+@font-face {
+	font-family: 'Miso';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Miso'), url('../font/miso.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Miso';
+	font-style: normal;
+	font-weight: bold;
+	src: local('Miso Bold'), url('../font/miso-bold.woff') format('woff');
+}
+*{
+	box-sizing: border-box;
+	height: 100%;
+
+}
+body{
+	background: #fdde7e;
+	text-align: center;
+	color: #333333;
+	font-family: 'Miso', sans-serif;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.ba-container__items{
+	min-width: 300px;
+	width: 360px;
+	height: 500px;
+	padding: 30px 15px;
+}
+.ba-container__items:hover{
+	padding: 0 15px;
+}
+.ba-coupon{
+	background: #FFFFFF;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px;
+}
+.ba-coupon__price{
+	color:  #02995b;
+	font-size: 70px;
+	line-height: 24px;
+	font-weight: bold;
+}
+.ba-coupon__price:before{
+	content: '$';
+}
+.ba-coupon__title{
+	font-size: 56px;
+	line-height: 24px;
+	font-weight: normal;
+}
+.ba-coupon__description{
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 26px;
+	width: 50%;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
